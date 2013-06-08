@@ -9,7 +9,7 @@ def run
     input = Ui.ask("Would you like more dinos? [y]es [n]o or a Dinosaur (by index)")
     if input == 'n'
       return Ui.display("Goodbye")
-    elsif !!(input =~ /^[-+]?[0-9]+$/)
+    elsif !!(input =~ /^[0-9]$/)# checks if input is numeric
       Ui.display(Dinosaur.new(selected).art)
     end
   end
