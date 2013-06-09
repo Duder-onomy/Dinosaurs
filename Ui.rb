@@ -1,8 +1,10 @@
 require 'term/ansicolor'
+
+
 class Color
   extend Term::ANSIColor
   def self.colors
-    [:black,:red, :green,:yellow,:blue,:magenta,:cyan,:white].sample
+    [:red, :green,:yellow,:blue,:magenta,:cyan,:white].sample
   end
 end
 
